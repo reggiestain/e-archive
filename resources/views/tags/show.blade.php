@@ -92,9 +92,10 @@ a:hover, a:active, a:focus {
             <div class="row align-items-end">
                 <div class="col-lg-6" style="margin-bottom:20px">
                     <div class="page-header-title">
-                        <i class="fa fa-tags bg-blue"></i>
+                        <i class="fa fa-tags bg-red"></i>
                         <div class="d-inline">
-                            <h5>{{ucfirst(config('settings.tags_label_singular'))}}</h5>
+                            {{--<h5>{{ucfirst(config('settings.tags_label_plural'))}}</h5>--}}
+                            <h5>Regions</h5>
                             <span></span>
                         </div>
                     </div>

@@ -196,7 +196,8 @@
                 <div class="col-lg-8" style="margin-bottom:0px">
                     <div class="page-header-title">                      
                         <div class="d-inline">
-                            <h3>{{ucfirst(config('settings.tags_label_plural'))}} Wise Permissions</h3>
+                            {{--<h3>{{ucfirst(config('settings.tags_label_plural'))}} Wise Permissions</h3>--}}
+                            <h3>Region Wise Permissions</h3>
                             <span></span>
                         </div>
                     </div>
@@ -217,7 +218,8 @@
                     <table class="table" style="margin:5px">
                         <thead>
                         <tr>
-                            <th>Select {{ucfirst(config('settings.tags_label_singular'))}}</th>
+                            {{--<th>Select {{ucfirst(config('settings.tags_label_singular'))}}</th>--}}
+                            <th>Select Region</th>
                             @foreach (config('constants.TAG_LEVEL_PERMISSIONS')  as $perm)
                                 <th>{{ucfirst($perm)}}</th>                               
                             @endforeach
@@ -231,7 +233,9 @@
                         <tr>
                             <td colspan="6">
                                 <button type="button" onclick="addRow()" class="btn btn-info btn-xs">Add
-                                    new {{config('settings.tags_label_singular')}}</button>
+                                    {{--new {{config('settings.tags_label_singular')}}--}}
+                                    new Region
+                                </button>
                             </td>
                         </tr>
                         </tfoot>

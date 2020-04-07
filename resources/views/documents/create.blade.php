@@ -16,7 +16,7 @@
             <div class="row align-items-end">
                 <div class="col-lg-12">
                     <div class="page-header-title">
-                        <i class="fa fa-folder bg-blue"></i>
+                        <i class="fa fa-folder bg-red"></i>
                         <div class="d-inline">
                             <h5>{{ucfirst(config('settings.document_label_singular'))}}</h5>
                             <span></span>

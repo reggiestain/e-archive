@@ -141,7 +141,7 @@
             <div class="row align-items-end">
                 <div class="col-lg-8">
                     <div class="page-header-title">
-                        <i class="ik ik-menu bg-blue"></i>
+                        <i class="fa fa-folder bg-red"></i>
                         <div class="d-inline">
                             <h5>{{ucfirst(config('settings.document_label_plural'))}}</h5>
                             <span></span>
