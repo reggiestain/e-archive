@@ -18,7 +18,7 @@
                             <div class="logo-centered">
                                 <a href="../index.html"><!--<img src="../src/img/brand.svg" alt="">--></a>
                             </div>
-                            <h3>Sign In to E-Archive</h3>
+                            <h3>Sign In to Vodafone Cash DMS</h3>
                             <!--<p>Happy to see you again!</p>-->
                             <form  method="POST" action="{{ url('/login') }}">
                             @csrf
