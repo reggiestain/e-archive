@@ -188,7 +188,7 @@
                 <div class="form-group">
                     <label for="tags" class="sr-only">{{config('settings.tags_label_singular')}}:</label>
                     <select class="form-control select2 input-sm" name="tags[]" id="tags"
-                            data-placeholder="Choose {{config('settings.tags_label_singular')}}" multiple>
+                            data-placeholder="Choose Region{{--{{config('settings.tags_label_singular')}} --}}" multiple>
                         @foreach($tags as $tag)
                             @canany(['read documents','read documents in tag '.$tag->id])
                                 <option

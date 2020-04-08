@@ -357,7 +357,7 @@ a:hover, a:active, a:focus {
                     </ul>
                     <div class="tab-content">
                         <div class="tab-pane active" id="tab_files">
-                            @if (config('settings.show_missing_files_errors')=='true' && $document->status!=config('constants.STATUS.APPROVED') && count($missigDocMsgs)!=0)
+                            @if (config('settings.show_missing_files_errors')=='true' && $document->status!=config('constants.STATUS.APPROVED') && count($missigDocMsgs)!=0) 
                                 <div class="alert alert-danger fade in alert-dismissible">
                                     <button class="close" data-dismiss="alert" aria-label="close" title="close">
                                         &times;
@@ -449,7 +449,7 @@ a:hover, a:active, a:focus {
                         </div>
                         @can('verify', $document)
                             <div class="tab-pane" id="tab_verification">
-                                @if ($document->status!=config('constants.STATUS.APPROVED'))
+                               @if ($document->status!=config('constants.STATUS.APPROVED'))
                                     {!! Form::open(['route' => ['documents.verify', $document->id], 'method' => 'post']) !!}
                                     <div class="form-group text-center">
                                     <textarea class="form-control" name="vcomment" id="vcomment" rows="4"
@@ -464,9 +464,9 @@ a:hover, a:active, a:focus {
                                         </button>
                                     </div>
                                     {!! Form::close() !!}
-                                @else
+                                   @else 
                                     <div class="form-group">
-                                        <span class="label label-success">Verified</span>
+                                        <span class="label label-success">{{$document->verified_at}}</span>
                                     </div>
                                     <div class="form-group">
                                         Verifier: <b>{{$document->verifiedBy->name}}</b>
@@ -475,7 +475,7 @@ a:hover, a:active, a:focus {
                                         Verified At: <b>{{formatDateTime($document->verified_at)}}</b>
                                         ({{\Carbon\Carbon::parse($document->verified_at)->diffForHumans()}})
                                     </div>
-                                @endif
+                               @endif
                             </div>
                         @endcan
                         <div class="tab-pane" id="tab_activity">
