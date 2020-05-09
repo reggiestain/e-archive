@@ -62,9 +62,10 @@ class HomeController extends AppBaseController
 
     public function welcome()
     {
-        \Artisan::call("inspire");
-        $quotes = \Artisan::output();
-        return view('welcome',compact('quotes'));
+        //\Artisan::call("inspire");
+        //$quotes = \Artisan::output();
+        //return view('welcome',compact('quotes'));
+        return view('auth.login');
     }
 
     public function profile(UpdateProfileRequest $request)

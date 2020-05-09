@@ -292,7 +292,7 @@ a:hover, a:active, a:focus {
                         </div>
                         <div class="form-group">
                             {{--<label>{{ucfirst(config('settings.tags_label_plural'))}}:</label>--}}
-                            <label>Region:</label>
+                            <label>Tag:</label>
                             <p>
                                 @foreach ($document->tags as $tag)
                                     <small class="label"

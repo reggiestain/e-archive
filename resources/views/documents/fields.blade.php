@@ -14,7 +14,7 @@
     @else
         <div class="form-group col-md-6">
             {{--<label for="tags[]">{{ucfirst(config('settings.tags_label_plural'))}}</label>--}}
-            <label for="tags[]">Regions</label>
+            <label for="tags[]">Tags</label>
             <select class="form-control select2" id="tags"
                     name="tags[]"
                     multiple>
@@ -30,7 +30,7 @@
 @else
     <div class="form-group col-md-6 {{ $errors->has("tags") ? 'has-error' :'' }}" style="margin-top:20px">
          {{--<label for="tags[]">{{ucfirst(config('settings.tags_label_plural'))}}</label>--}}
-         <label for="tags[]">Regions</label>
+         <label for="tags[]">Tags</label>
         <select class="form-control select2" id="tags" name="tags[]" multiple>
             @foreach($tags as $tag)
                 @canany (['create documents','create documents in tag '.$tag->id])

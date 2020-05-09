@@ -1,10 +1,10 @@
 <div class="app-sidebar colored">
                     <div class="sidebar-header">
                         <a class="header-brand" href="index.html">
-                            <div class="logo-img">
+                           <!-- <div class="logo-img">
                                <img src="{{ asset('/img/vodafone-cash.png')}}" class="header-brand-img" alt="lavalite"> 
-                            </div>
-                           {{--<span class="text">{{config('settings.system_title')}}</span>--}}
+                            </div>-->
+                           <span class="text">{{config('settings.system_title')}}</span>
                         </a>
                         <button type="button" class="nav-toggle"><i data-toggle="expanded" class="ik ik-toggle-right toggle-icon"></i></button>
                         <button id="sidebarClose" class="nav-close"><i class="ik ik-x"></i></button>
@@ -13,7 +13,7 @@
                     <div class="sidebar-content">
                         <div class="nav-container">
                             <nav id="main-menu-navigation" class="navigation-main">
-                                <div class="nav-lavel" style="text-align:center;color:#fff;font-weight:bold;font-size:18px">DMS</div>
+                                <!--<div class="nav-lavel" style="text-align:center;color:#fff;font-weight:bold;font-size:18px">DMS</div>-->
                                 <div class="nav-item {{ Request::is('admin/home*') ? 'active' : '' }}">
                                     <a href="{!! route('admin.dashboard') !!}"><i class="ik ik-bar-chart-2"></i><span>Dashboard</span></a>
                                 </div>
@@ -23,7 +23,7 @@
                                 </div>
                                 @can('read tags')
                                 <div class="nav-item {{ Request::is('admin/tags*') ? 'active' : '' }}">
-                                    <a href="{!! route('tags.index') !!}"><i class="fa fa-tags"></i><span>Regions</span> <!--<span class="badge badge-success">New</span>--></a>
+                                    <a href="{!! route('tags.index') !!}"><i class="fa fa-tags"></i><span>Tags</span> <!--<span class="badge badge-success">New</span>--></a>
                                 </div>
                                 @endcan
                                 @can('viewAny',\App\Document::class)

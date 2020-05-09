@@ -95,7 +95,7 @@ a:hover, a:active, a:focus {
                         <i class="fa fa-tags bg-red"></i>
                         <div class="d-inline">
                             {{--<h5>{{ucfirst(config('settings.tags_label_plural'))}}</h5>--}}
-                            <h5>Regions</h5>
+                            <h5>Tags</h5>
                             <span></span>
                         </div>
                     </div>

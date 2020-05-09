@@ -12,7 +12,6 @@
 */
 
 Route::get('/', 'HomeController@welcome')->name('home');
-
 Route::get('config', function () {
     Artisan::call('route:clear');
     Artisan::call('config:clear');

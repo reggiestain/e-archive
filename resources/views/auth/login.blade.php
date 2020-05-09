@@ -10,6 +10,7 @@
                 <div class="row flex-row h-100 bg-white">
                     <div class="col-xl-8 col-lg-6 col-md-5 p-0 d-md-block d-lg-block d-sm-none d-none">
                         <div class="lavalite-bg" style="background-image: url('../img/auth/login-bg.jpg')">
+                            <!--<div class="lavalite-bg" style="background-image: url('../img/vodafon-cash-b.jpg')">-->
                             <div class="lavalite-overlay"></div>
                         </div>
                     </div>
@@ -18,7 +19,7 @@
                             <div class="logo-centered">
                                 <a href="../index.html"><!--<img src="../src/img/brand.svg" alt="">--></a>
                             </div>
-                            <h3>Sign In to Vodafone Cash DMS</h3>
+                            <h3>Sign In to DMS</h3>
                             <!--<p>Happy to see you again!</p>-->
                             <form  method="POST" action="{{ url('/login') }}">
                             @csrf
