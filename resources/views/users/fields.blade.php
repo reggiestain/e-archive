@@ -197,7 +197,7 @@
                     <div class="page-header-title">                      
                         <div class="d-inline">
                             {{--<h3>{{ucfirst(config('settings.tags_label_plural'))}} Wise Permissions</h3>--}}
-                            <h3>Region Wise Permissions</h3>
+                            <h3>Tags Wise Permissions</h3>
                             <span></span>
                         </div>
                     </div>
